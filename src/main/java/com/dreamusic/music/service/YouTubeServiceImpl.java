@@ -1,4 +1,4 @@
-package com.dreamusic.music.services;
+package com.dreamusic.music.service;
 
 import com.google.api.services.youtube.YouTube;
 import com.google.api.services.youtube.model.Video;

@@ -1,6 +1,6 @@
 package com.dreamusic.music;
 
-import com.dreamusic.music.services.YouTubeService;
+import com.dreamusic.music.service.YouTubeServiceImpl;
 import com.google.api.services.youtube.model.Video;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -12,7 +12,7 @@ import java.io.IOException;
 public class MyTubeApplication {
 
 	@Autowired
-	private YouTubeService youTubeService;
+	private YouTubeServiceImpl youTubeService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(MyTubeApplication.class, args);
