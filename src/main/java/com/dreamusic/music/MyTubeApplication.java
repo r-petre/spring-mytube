@@ -1,25 +1,25 @@
 package com.dreamusic.music;
 
-import com.dreamusic.music.service.YouTubeServiceImpl;
-import com.google.api.services.youtube.model.Video;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.io.IOException;
 
 @SpringBootApplication
 public class MyTubeApplication {
 
-	@Autowired
-	private YouTubeServiceImpl youTubeService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(MyTubeApplication.class, args);
 	}
 
-	private Video getVideoDetails(String videoId) throws IOException {
-		return youTubeService.getVideoDetails(videoId);
-	}
+	/*private Video getVideoDetails(String videoId) throws IOException {
+		return youTubeService().getVideoDetails(videoId);
+	}*/
+/*
+	@Bean
+	public YouTubeServiceImpl youTubeService() {
+		ApplicationContext context = new AnnotationConfigApplicationContext(YouTubeConfig.class);
+		YouTube youTube = context.getBean("youTube", YouTube.class);
+		return new YouTubeServiceImpl();
+	}*/
 
 }
